@@ -29,7 +29,7 @@
 
    También puedes configurar las variables de entorno utilizando dotenv, que te permitirá almacenar información sensible como credenciales de la base de datos sin exponerlas en tu código.
 
-5. **"A tener en cuenta":** debes seguir los pasos de instalación del fronentd para configurar las rutas correspondientes en tu proyecto de Express para hacer solicitudes al servidor. Además, es importante tener en cuenta que la configuración del frontend esta alojada **en la rama "[master](https://gitlab.com/Willydmq/userlist)" de este proyecto** para poder acceder a ella y poder conectarla al proyecto de Express.
+5. **"A tener en cuenta":** debes seguir los pasos de instalación del fronentd para configurar las rutas correspondientes en tu proyecto de Express para hacer solicitudes al servidor. Además, es importante tener en cuenta que la configuración del frontend esta alojada **en la rama "[master](https://github.com/Willydmq/userList)" de este proyecto** para poder acceder a ella y poder conectarla al proyecto de Express.
 
 6. Una vez completados los pasos anteriores, ejecutar el comando npm run dev para iniciar la aplicación.
    ```
