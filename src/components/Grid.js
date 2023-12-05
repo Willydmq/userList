@@ -1,8 +1,10 @@
-import React from "react";
 import axios from "axios";
-import styled from "styled-components";
-import { FaTrash, FaEdit } from "react-icons/fa";
+import React from "react";
+import { FaEdit, FaTrash } from "react-icons/fa";
 import { toast } from "react-toastify";
+import styled from "styled-components";
+
+const url = "https://userlist-8eev.onrender.com/";
 
 const Table = styled.table`
   width: 100%;
@@ -48,7 +50,7 @@ const Grid = ({ users, setUsers, setOnEdit }) => {
 
   const handleDelete = async (id) => {
     await axios
-      .delete("http://localhost:8800/" + id)
+      .delete(`${url}` + id)
       .then(({ data }) => {
         const newArray = users.filter((user) => user.id !== id);
 

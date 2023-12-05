@@ -1,11 +1,13 @@
-import GlobalStyle from "./styles/global";
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import styled from "styled-components";
 import Form from "./components/Form.js";
 import Grid from "./components/Grid";
-import { useEffect, useState } from "react";
-import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import axios from "axios";
+import GlobalStyle from "./styles/global";
+
+const url = "https://userlist-8eev.onrender.com/";
 
 const Container = styled.div`
   width: 100%;
@@ -25,7 +27,7 @@ function App() {
 
   const getUsers = async () => {
     try {
-      const res = await axios.get("http://localhost:8800");
+      const res = await axios.get(`${url}`);
       setUsers(res.data.sort((a, b) => (a.user > b.user ? 1 : -1)));
     } catch (error) {
       toast.error(error);

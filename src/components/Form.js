@@ -3,6 +3,8 @@ import React, { useEffect, useRef } from "react";
 import { toast } from "react-toastify";
 import styled from "styled-components";
 
+const url = "https://userlist-8eev.onrender.com/";
+
 const FormContainer = styled.form`
   display: flex;
   align-items: flex-end;
@@ -67,7 +69,7 @@ const Form = ({ getUsers, onEdit, setOnEdit }) => {
 
     if (onEdit) {
       await axios
-        .put("http://localhost:8800/" + onEdit.id, {
+        .put(`${url}` + onEdit.id, {
           user: usuario.user.value,
           email: usuario.email.value,
           password: usuario.password.value,
@@ -76,7 +78,7 @@ const Form = ({ getUsers, onEdit, setOnEdit }) => {
         .catch(({ data }) => toast.error(data));
     } else {
       await axios
-        .post("http://localhost:8800", {
+        .post(`${url}`, {
           user: usuario.user.value,
           email: usuario.email.value,
           password: usuario.password.value,
