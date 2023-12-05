@@ -45,7 +45,7 @@
 
    Este comando creará un archivo package.json en la carpeta de su proyecto. Este archivo contendrá información sobre su proyecto y las dependencias que se instalarán.
 
-5. **"A tener en cuenta":** debes seguir los pasos de instalación del backend para configurar las rutas correspondientes en tu proyecto de React para hacer solicitudes al servidor. Además, es importante tener en cuenta que la configuración del backend esta alojada **en la rama "[backend](https://gitlab.com/Willydmq/userlist/-/tree/Backend?ref_type=heads)" de este proyecto** para poder acceder a ella y poder conectarla al proyecto de React.
+5. **"A tener en cuenta":** debes seguir los pasos de instalación del backend para configurar las rutas correspondientes en tu proyecto de React para hacer solicitudes al servidor. Además, es importante tener en cuenta que la configuración del backend esta alojada **en la rama "[backend](https://github.com/Willydmq/userList/tree/Backend)" de este proyecto** para poder acceder a ella y poder conectarla al proyecto de React.
 
 6. Una vez completados los pasos anteriores, ejecutar el comando npm start para iniciar la aplicación en el entorno de desarrollo.
    ```
